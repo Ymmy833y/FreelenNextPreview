@@ -81,7 +81,7 @@ class Screen {
 
 class Word {
   constructor(word, isHorizontal, positon=[], place=[]) {
-    this.screenElem = document.querySelector("#screen");
+    this.screenElem = document.getElementById("screen");
 
     this.isHorizontal = isHorizontal;
     this.wordLength = word.length;
@@ -92,6 +92,7 @@ class Word {
     this.ELEM.classList.add("word");
     this.ELEM.style.left = place[0] + "%";
     this.ELEM.style.top = place[1] + "%";
+    this.ELEM.style.fontSize = (this.screenElem.offsetWidth / 25) + "px";
     this.ELEM.style.writingMode = this.getWritingMode(isHorizontal);
   }
   

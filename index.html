@@ -9,18 +9,21 @@
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <script src="./js/anime.min.js"></script>
   <style>
+    body {
+      margin: 10px;
+    }
     #screen {
       position: relative;
       margin: 10px auto;
-      width: 800px;
-      height: 600px;
+      max-width: 100vh;
+      height: 75vw;
+      max-height: 75vh;
       border: 2px solid black;
       border-radius: 5px;
     }
 
     .word {
       position: absolute;
-      font-size: 36px;
       white-space: nowrap;
       font-family: 'MS Mincho', 'Hiragino Mincho Pro', '';
       text-align: center;
@@ -36,15 +39,15 @@
 <body>
   <div id="screen" class="shadow"></div>
   <hr>
-  <div class="px-5">
+  <div class="container">
     <div class="row pb-2">
-      <div class="col-3">
+      <div class="col p-1">
         <button type="button" class="btn btn-secondary w-100" id="add">追加</button>
       </div>
-      <div class="col-3">
+      <div class="col p-1">
         <button type="button" class="btn btn-secondary w-100" id="reset">初期化</button>
       </div>
-      <div class="col-6">
+      <div class="col p-1">
         <button type="button" class="btn btn-info w-100" id="start">開始</button>
       </div>
     </div>
