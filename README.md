@@ -2,7 +2,7 @@
 
 アニメ「葬送のフリーレン」の次回予告を生成するWebアプリです。
 
-### [Preview](https://ymmy833y.github.io/FreelenNextPreview/)
+### [Preview](https://ymmy833y.github.io/freelen-next-preview/)
 
 ### 実行環境
 - Windows11
